@@ -1,0 +1,75 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+.modal-main {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.modal {
+    background-color: white;
+    width: 80%;
+    height: 80%;
+    border-radius: 15px;
+    position: relative;
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal > .modal-header, .modal > .modal-body, .modal > .modal-footer {
+    padding: 20px 30px;
+    width: -webkit-fill-available;
+}
+
+.modal > .modal-header {
+    border-bottom: 1px solid #666;
+    background-color: #343a40;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.modal > .modal-header > .modal-title {
+    flex: 1;
+}
+
+.modal > .modal-body {
+    border: none;
+    flex: 1;
+}
+
+.modal > .modal-footer {
+    background-color: #343a40;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+svg {
+    height: 28px;
+    width: 28px;
+}
+
+.onceki, .sonraki {
+    margin: 10px;
+}
+
+.onceki > i, .sonraki > i {
+    font-size: 30px;
+}
+
